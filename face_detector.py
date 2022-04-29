@@ -13,7 +13,7 @@ img_greyscale = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
 
 # detect face
 face_coordinates = face_trained_data.detectMultiScale(img_greyscale)
-print(face_coordinates)
+# print(face_coordinates)
 
 # draw rectangle around face
 
@@ -26,6 +26,6 @@ for (x, y, w, h) in face_coordinates:
     # cv2.circle(img, (x, y,), (44), (0, 255, 0), 2) to be improved
 
 
-cv2.imshow('faizan friends', img)
+cv2.imshow('qll in one faces', img)
 
 cv2.waitKey()
